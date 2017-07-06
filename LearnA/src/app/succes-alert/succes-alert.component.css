@@ -1,0 +1,6 @@
+p.success{
+    background-color: green;
+    border: 1px solid black;
+    color: white;
+    padding: 10px;
+}
