@@ -7,6 +7,16 @@
             <hr>
             <app-warning-alert></app-warning-alert>
             <app-succes-alert></app-succes-alert>
+
+            <hr>
+            <button class="btn btn-primary" (click)="onToggleDetais()"> Display Details</button>
+            <p *ngIf="showDetails">Secret password = test</p>
+            <div 
+            *ngFor="let item of log" 
+            [ngStyle]="{backgroundColor: item > 4 ? 'blue' : 'transparaent'}" 
+            [ngClass]="{'white-text': item > 4}">
+                {{ item }}
+            </div>
         </div>
     </div>
 </div>
